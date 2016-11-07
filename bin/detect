@@ -1,0 +1,9 @@
+#!/bin/sh#!/bin/sh
+
+# this pack is valid for apps with a script at bin/prepare
+if [ -f $1/bin/prepare ]; then
+  echo "ClickfunnelsBinPrepareFramework"
+  exit 0
+else
+  exit 1
+fi
