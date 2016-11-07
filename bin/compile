@@ -23,5 +23,6 @@ echo "running bin/prepare" | indent
 
 export_env_dir
 
-$1/bin/prepare | indent
+cd $1
+./bin/prepare | indent
 
