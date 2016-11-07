@@ -1,4 +1,4 @@
-#!/bin/sh#!/bin/sh
+#!/bin/sh
 
 # this pack is valid for apps with a script at bin/prepare
 
