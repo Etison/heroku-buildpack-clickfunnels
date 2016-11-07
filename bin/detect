@@ -12,5 +12,6 @@ if [ -f $1/bin/prepare ]; then
   echo "ClickfunnelsBinPrepareFramework"
   exit 0
 else
+  echo "WTF???"
   exit 1
 fi
