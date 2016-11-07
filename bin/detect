@@ -2,16 +2,13 @@
 
 # this pack is valid for apps with a script at bin/prepare
 
-#echo "looking for bin prepare"
-#echo "looking in :"
-#echo $1
-#echo "how about"
-#echo $0
+echo "looking for bin prepare"
 
-#if [ -f $1/bin/prepare ]; then
+
+if [ -f $1/bin/prepare ]; then
   echo "ClickfunnelsBinPrepareFramework"
   exit 0
-#else
-#  echo "WTF???"
-#  exit 1
-#fi
+else
+  echo "could not find a file in the app dir at bin/prepare"
+  exit 1
+fi
